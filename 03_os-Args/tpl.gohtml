@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+
+{{range $key,$value :=.}}
+<ul>
+    <li>Stagiaire {{(inc $key )}} : </li>
+    <li>{{$value.Nom}}</li>
+    <li>{{$value.Prenom}}</li>
+    <li>{{$value.Note}}</li>
+</ul>
+{{end}}
+
+</body>
+</html>
